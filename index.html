@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>BOOKY</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+<div class="splash" id="splash" aria-hidden="true">
+    <div class="splash-logo">
+        <img src="LIBROS.jpeg" alt="">
+    </div>
+    <div class="splash-titulo">
+        <span style="--i:0">B</span><span style="--i:1">O</span><span style="--i:2">O</span><span style="--i:3">K</span><span style="--i:4">Y</span>
+    </div>
+    <p class="splash-lema">Gestión de bibliotecas y recursos</p>
+    <div class="splash-barra"><span></span></div>
+    <p class="splash-saltar">Toca para saltar</p>
+</div>
+
+<div class="top-lema">
+        <p>BOOKY: Innovación y organización para la gestión tecnológica de tu biblioteca</p>
+    </div>
+
+    <header class="encabezado">
+        <div class="logo-container">
+            <img src="LIBROS.jpeg" alt="Logo de BOOKY" class="logo">
+        </div>
+        <div class="titulo-sitio">
+            <h1>BOOKY</h1>
+            <p>Sistema de Gestión de Bibliotecas y Recursos</p>
+        </div>
+    </header>
+
+    <div class="banner-container">
+        <img src="banner.jpeg" alt="Banner principal de BOOKY" class="banner">
+    </div>
+
+    <nav class="navegacion">
+        <ul>
+            <li><a href="#inicio">Inicio</a></li>
+            <li><a href="#catalogo">Catálogo</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+            <li><button type="button" id="btnCerrarSesion" class="btn-navegacion">Cerrar sesión</button></li>
+        </ul>
+    </nav>
+
+    <main class="cuerpo">
+        <section id="inicio" class="seccion-pagina">
+            <div class="inicio-hero">
+                <div class="inicio-texto">
+                    <span class="inicio-etiqueta">Bienvenido a BOOKY</span>
+                    <h2>Tu biblioteca, organizada y a un clic</h2>
+                    <p>Consulta el catálogo y reserva libros, revistas y equipo electrónico en segundos. Cada reserva queda registrada al instante en la base de datos de la biblioteca.</p>
+                    <div class="inicio-acciones">
+                        <a class="boton-principal" href="#catalogo">Explorar catálogo</a>
+                        <a class="boton-secundario" href="#contacto">Contacto</a>
+                    </div>
+                    <div class="inicio-datos">
+                        <div><strong>6</strong><span>Libros</span></div>
+                        <div><strong>6</strong><span>Revistas</span></div>
+                        <div><strong>4</strong><span>Equipos</span></div>
+                    </div>
+                </div>
+            </div>
+
+            <article class="bloque-contenido">
+                <h2>Planteamiento del problema</h2>
+                <p>En una libreria o biblioteca se maneja diariamente una gran cantidad de información:prestamos,devoluviones
+                   reservas, materiales de consulta y equipos electrónicos.Cuando estos datos se registran únicamente en cuadernos o archivos separados, puede ser difícil conocer rápidamente qué material está disponible, quién lo tiene prestado o cuándo debe devolverse.     
+            </p></article>
+
+            <article class="bloque-contenido">
+                <h2>Objetivos</h2>
+                <h3> Objetivo General</h3>
+                <p>Diseñar y desarrollar un sistema de gestión para una librería y biblioteca que permita organizar sus recursos, controlar préstamos y devoluciones, administrar revistas y equipos electrónicos y facilitar la consulta de información.</p>
+
+                <h3>Objetivos Específicos</h3>
+                <ul>
+                    <li>Diseñar una interfaz sencilla y fácil de utilizar que permita registrar, consultar, modificar y eliminar información de libros, clientes y ventas.</li>
+                    <li>Implementar un sistema de control de inventario que permita conocer la cantidad disponible de cada libro y mantener actualizada la información de los productos.</li>
+                    <li>Optimizar el proceso de ventas y generación de reportes, facilitando el registro de compras y proporcionando información útil para mejorar la administración de la librería.</li>
+                </ul>
+            </article>
+
+            <article class="bloque-contenido">
+                <h2>Justificacion</h2>
+                <p>El proyecto es importante porque una administración organizada permite aprovechar mejor los recursos de una librería y biblioteca. Un sistema digital puede reducir el tiempo empleado en buscar información y disminuir errores ocasionados por registros manuales.</p>
+                <p>La solución también permite tener un mayor control de los préstamos. Al registrar quién recibe un material, cuándo lo recibe y cuándo debe devolverlo, el personal puede consultar el estado de los recursos con mayor facilidad.</p>
+                <p>Además, integrar los equipos electrónicos en el inventario ayuda a conocer qué dispositivos existen, si están disponibles, si están en mantenimiento y quién los tiene asignados. Esto es especialmente útil cuando los recursos tecnológicos son compartidos por diferentes usuarios.</p>
+            </article>
+
+            <article class="bloque-contenido">
+                <h2>Marco teorico</h2>
+                <p>Sistema de información:</p>
+                Conjunto de elementos que permite registrar, procesar, almacenar y consultar información.
+                <p>Base de datos</p>
+                   Espacio estructurado donde se almacenan datos de libros, usuarios, préstamos, revistas y equipos.
+                <p>Inventario</p>
+                   Registro de los recursos disponibles y de su estado.
+            </article>
+        </section>
+
+        <section id="catalogo" class="seccion-pagina">
+            <h2>Catálogo</h2>
+            <p>Selecciona una categoría para consultar sus recursos.</p>
+            <article class="bloque-contenido">
+                <h3><a href="#libros">Libros</a></h3>
+                <p>Consulta los libros disponibles en la biblioteca.</p>
+            </article>
+            <article class="bloque-contenido">
+                <h3><a href="#revistas">Revistas</a></h3>
+                <p>Consulta las revistas disponibles.</p>
+            </article>
+            <article class="bloque-contenido">
+                <h3><a href="#equipo-electronico">Equipo electrónico</a></h3>
+                <p>Consulta los equipos electrónicos disponibles.</p>
+            </article>
+        </section>
+
+        <section id="libros" class="seccion-pagina">
+            <h2>Libros</h2>
+            <p>Consulta aquí los libros disponibles en la biblioteca.</p>
+            <div class="tarjetas-libros">
+                <article class="tarjeta-libro">
+                    <img src="https://tse2.mm.bing.net/th/id/OIP.RpnW-lnQHUbVWc9-xmxV2QHaKK?r=0&amp;rs=1&amp;pid=ImgDetMain&amp;o=7&amp;rm=3text=Don+Quijote" alt="Portada de Don Quijote de la Mancha">
+                    <h3>Don Quijote de la Mancha</h3>
+                    <p>Precio por préstamo: $1.00</p>
+                    <button type="button">Reservar</button>
+                </article>
+                <article class="tarjeta-libro">
+                    <img src="https://tse2.mm.bing.net/th/id/OIP.fyy44FbbtxRWIhyaWXqbGAHaLX?r=0&amp;rs=1&amp;pid=ImgDetMain&amp;o=7&amp;rm=3text=Cien+anos+de+soledad" alt="Portada de Cien años de soledad">
+                    <h3>Cien años de soledad</h3>
+                    <p>Precio por préstamo: $1.25</p>
+                    <button type="button">Reservar</button>
+                </article>
+                <article class="tarjeta-libro">
+                    <img src="https://tse3.mm.bing.net/th/id/OIP.7m4_MyjdvLHXHyyEQWOkjQHaLH?r=0&amp;rs=1&amp;pid=ImgDetMain&amp;o=7&amp;rm=3text=El+principito" alt="Portada de El principito">
+                    <h3>El principito</h3>
+                    <p>Precio por préstamo: $0.75</p>
+                    <button type="button">Reservar</button>
+                </article>
+                <article class="tarjeta-libro">
+                    <img src="https://tse3.mm.bing.net/th/id/OIP.JQNEGtbI-YjTh49xxlGYjwHaMX?r=0&amp;rs=1&amp;pid=ImgDetMain&amp;o=7&amp;rm=3text=La+Odisea" alt="Portada de La Odisea">
+                    <h3>La Odisea</h3>
+                    <p>Precio por préstamo: $1.00</p>
+                    <button type="button">Reservar</button>
+                </article>
+                <article class="tarjeta-libro">
+                    <img src="https://cdn.prod.website-files.com/6034d7d1f3e0f52c50b2adee/625452ebb0e15e764981b44c_6034d7d1f3e0f55fcab2b2de_Orgullo-y-prejuicio-jane-austen-editorial-alma.jpeg" alt="Portada de Orgullo y prejuicio">
+                    <h3>Orgullo y prejuicio</h3>
+                    <p>Precio por préstamo: $1.00</p>
+                    <button type="button">Reservar</button>
+                </article>
+                <article class="tarjeta-libro">
+                    <img src="https://dojiw2m9tvv09.cloudfront.net/82626/product/portada-el-alquimista-paulo-coelho-2024060618574214.png" alt="Portada de El Alquimista">
+                    <h3>El Alquimista</h3>
+                    <p>Precio por préstamo: $1.25</p>
+                    <button type="button">Reservar</button>
+                </article>
+            </div>
+            <p><a href="#catalogo">Volver al catálogo</a></p>
+        </section>
+
+        <section id="revistas" class="seccion-pagina">
+            <h2>Revistas</h2>
+            <p>Consulta aquí las revistas disponibles.</p>
+            <div class="tarjetas-libros">
+                <article class="tarjeta-libro">
+                    <img src="https://tse1.mm.bing.net/th/id/OIP.s0VmVTAqu7IFC6wGkjOLEwHaKx?r=0&amp;rs=1&amp;pid=ImgDetMain&amp;o=7&amp;rm=3" alt="Portada de National Geographic">
+                    <h3>National Geographic</h3>
+                    <p>Precio por préstamo: $0.75</p>
+                    <button type="button">Reservar</button>
+                </article>
+                <article class="tarjeta-libro">
+                    <img src="https://tse1.mm.bing.net/th/id/OIP.SyMWzZ-SfA2PVLM-_qONIAHaJs?r=0&amp;rs=1&amp;pid=ImgDetMain&amp;o=7&amp;rm=3" alt="Portada de Muy Interesante">
+                    <h3>Muy Interesante</h3>
+                    <p>Precio por préstamo: $0.60</p>
+                    <button type="button">Reservar</button>
+                </article>
+                <article class="tarjeta-libro">
+                    <img src="https://tse2.mm.bing.net/th/id/OIP.92xBF_clBTgdRQI_sRqkmQHaJ4?r=0&amp;rs=1&amp;pid=ImgDetMain&amp;o=7&amp;rm=3" alt="Portada de Ciencia Hoy">
+                    <h3>Ciencia Hoy</h3>
+                    <p>Precio por préstamo: $0.50</p>
+                    <button type="button">Reservar</button>
+                </article>
+                <article class="tarjeta-libro">
+                    <img src="https://tse2.mm.bing.net/th/id/OIP.jQRyQbcbmhl8SdgC2IL_QgHaKI?r=0&amp;rs=1&amp;pid=ImgDetMain&amp;o=7&amp;rm=3" alt="Portada de Historia Universal">
+                    <h3>Historia Universal</h3>
+                    <p>Precio por préstamo: $0.65</p>
+                    <button type="button">Reservar</button>
+                </article>
+                <article class="tarjeta-libro">
+                    <img src="https://media.voguearabia.com/photos/67c03e59a4a56ecfd4ecbb1d/master/w_1600%2Cc_limit/VOGUE%2520ARABIA%2520INSTA%2520COVER%252003_25%2520(ENGLISH).jpg" alt="Portada de Vogue">
+                    <h3>Vogue</h3>
+                    <p>Precio por préstamo: $0.80</p>
+                    <button type="button">Reservar</button>
+                </article>
+                <article class="tarjeta-libro">
+                    <img src="https://tse1.mm.bing.net/th/id/OIP.zkyR2NQtnbghcjr3gG2SVgHaJu?r=0&amp;rs=1&amp;pid=ImgDetMain&amp;o=7&amp;rm=3" alt="Portada de National Geographic Kids">
+                    <h3>National Geographic Kids</h3>
+                    <p>Precio por préstamo: $0.55</p>
+                    <button type="button">Reservar</button>
+                </article>
+            </div>
+            <p><a href="#catalogo">Volver al catálogo</a></p>
+        </section>
+
+        <section id="equipo-electronico" class="seccion-pagina">
+            <h2>Equipo electrónico</h2>
+            <p>Consulta aquí los equipos electrónicos disponibles.</p>
+            <div class="tarjetas-libros">
+                <article class="tarjeta-libro">
+                    <img src="https://tse1.mm.bing.net/th/id/OIP.Xk3tSfnkmsd4LjEi7myn2gHaHa?r=0&amp;rs=1&amp;pid=ImgDetMain&amp;o=7&amp;rm=3" alt="Imagen de una computadora portátil">
+                    <h3>Computadora portátil</h3>
+                    <p>Precio por préstamo: $5.00</p>
+                    <button type="button">Reservar</button>
+                </article>
+                <article class="tarjeta-libro">
+                    <img src="https://tse3.mm.bing.net/th/id/OIP.cKbfmXkJWzSuKKbCVurF0wHaJ7?r=0&amp;rs=1&amp;pid=ImgDetMain&amp;o=7&amp;rm=3" alt="Imagen de una tableta electrónica">
+                    <h3>Tableta electrónica</h3>
+                    <p>Precio por préstamo: $3.00</p>
+                    <button type="button">Reservar</button>
+                </article>
+                <article class="tarjeta-libro">
+                    <img src="https://http2.mlstatic.com/D_NQ_NP_746324-MLA83968991737_042025-O.webp" alt="Imagen de un proyector">
+                    <h3>Proyector</h3>
+                    <p>Precio por préstamo: $4.00</p>
+                    <button type="button">Reservar</button>
+                </article>
+                <article class="tarjeta-libro">
+                    <img src="https://http2.mlstatic.com/D_NQ_NP_726463-MLU73290705421_122023-F.jpg" alt="Imagen de unos auriculares">
+                    <h3>Auriculares</h3>
+                    <p>Precio por préstamo: $1.50</p>
+                    <button type="button">Reservar</button>
+                </article>
+            </div>
+            <p><a href="#catalogo">Volver al catálogo</a></p>
+        </section>
+
+        <section id="contacto" class="seccion-pagina">
+            <h2>Contactos</h2>
+            <div class="tarjeta-contacto">
+                <p><strong>WhatsApp:</strong> +503 1234-5678</p>
+                <p><strong>Instagram:</strong> @booky_insl</p>
+                <p><strong>Correo Electrónico:</strong> contacto@booky.edu.sv</p>
+                <p><strong>Ubicación:</strong> Instituto Nacional San Luis</p>
+            </div>
+        </section>
+    </main>
+
+    <footer class="pie-pagina">
+        <p>© 2026 BOOKY - Instituto Nacional San Luis. Todos los derechos reservados.</p>
+    </footer>
+
+    <div class="modal-reserva" id="modalReserva" hidden>
+        <div class="modal-contenido">
+            <button type="button" class="modal-cerrar" aria-label="Cerrar">&times;</button>
+            <h2>Reserva de recurso</h2>
+            <p class="modal-producto">Producto seleccionado: <strong id="productoSeleccionado"></strong></p>
+            <form class="formulario-reserva" id="formularioReserva" data-endpoint="guardar-reserva.php">
+                <div class="campo">
+                    <label for="campoNombre">Nombre</label>
+                    <input type="text" id="campoNombre" name="nombre" required>
+                </div>
+                <div class="campo">
+                    <label for="campoApellido">Apellido</label>
+                    <input type="text" id="campoApellido" name="apellido" required>
+                </div>
+                <div class="campo">
+                    <label for="campoCorreo">Correo</label>
+                    <input type="email" id="campoCorreo" name="correo" required>
+                </div>
+                <div class="campo">
+                    <label for="campoNumero">Número</label>
+                    <input type="tel" id="campoNumero" name="numero" required>
+                </div>
+                <div class="campo">
+                    <label for="campoHoraUso">Hora de uso</label>
+                    <input type="time" id="campoHoraUso" name="horaUso" required>
+                </div>
+                <div class="campo">
+                    <label for="campoHoraEntrega">Hora de entrega</label>
+                    <input type="time" id="campoHoraEntrega" name="horaEntrega" required>
+                </div>
+                <button type="submit">Confirmar reserva</button>
+            </form>
+        </div>
+    </div>
+    <div class="modal-overlay pantalla-acceso" id="pantallaAcceso" data-sesion="sesion.php" data-salir="cerrar-sesion.php">
+        <div class="modal-card">
+            <h2 class="modal-titulo">Bienvenido a BOOKY</h2>
+            <p class="modal-subtitulo">Ingresa tus datos para entrar. Si es tu primera vez, se registran automáticamente</p>
+            <form id="formLogin" data-endpoint="iniciar-sesion.php">
+                <div class="grupo-campo">
+                    <label for="nombreLogin">Nombre</label>
+                    <input type="text" id="nombreLogin" name="nombre" placeholder="Tu nombre" required>
+                </div>
+                <div class="grupo-campo">
+                    <label for="correoLogin">Correo electrónico</label>
+                    <input type="email" id="correoLogin" name="correo" placeholder="ejemplo@correo.com" required>
+                </div>
+                <div class="grupo-campo">
+                    <label for="passwordLogin">Contraseña</label>
+                    <input type="password" id="passwordLogin" name="password" placeholder="••••••••" required>
+                </div>
+                <button type="submit" class="btn-principal">Entrar</button>
+            </form>
+        </div>
+    </div>
+
+<script src="principal.js"></script>
+</body>
+</html>
